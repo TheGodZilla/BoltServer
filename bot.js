@@ -10,7 +10,7 @@
  */
 
 var config = {
-    name: 'dcae.bot',
+    name: 'Sparkbot',
     userid: function () {
         return toId(this.name);
     },
