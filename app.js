@@ -376,6 +376,16 @@ if (Config.crashguard) {
 
 global.Sockets = require('./sockets.js');
 
+global.Core = require('./core.js').core;
+
+global.Components = require('./components.js');
+
+global.Poll = require('./core.js').core.poll();
+
+global.Bot = require('./bot.js');
+
+global.SysopAccess = require('./core.js').sysopAccess();
+
 /*********************************************************
  * Set up our last global
  *********************************************************/
@@ -408,8 +418,5 @@ fs.readFile('./config/ipbans.txt', function (err, data) {
 	Users.checkRangeBanned = Cidr.checker(rangebans);
 });
 
-/*********************************************************
- * Start up the REPL server
- *********************************************************/
+global.hangman = require('./hangman.js').hangman();
 
-require('./repl.js').start('app', function (cmd) { return eval(cmd); });
