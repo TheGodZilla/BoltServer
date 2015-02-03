@@ -175,6 +175,36 @@ user.updateIdentity();
                 buffer.voices.push(staff[0]);
             }
         }
+        buffer.admins.sort(function(a,b) {
+                           a = a.toLowerCase();
+                           b = b.toLowerCase();
+                           if( a == b) return 0;
+                           return a < b ? -1 : 1;
+                           });
+        buffer.leaders.sort(function(a,b) {
+                            a = a.toLowerCase();
+                            b = b.toLowerCase();
+                            if( a == b) return 0;
+                            return a < b ? -1 : 1;
+                            });
+        buffer.mods.sort(function(a,b) {
+                         a = a.toLowerCase();
+                         b = b.toLowerCase();
+                         if( a == b) return 0;
+                         return a < b ? -1 : 1;
+                         });
+        buffer.drivers.sort(function(a,b) {
+                            a = a.toLowerCase();
+                            b = b.toLowerCase();
+                            if( a == b) return 0;
+                            return a < b ? -1 : 1;
+                            });
+        buffer.voices.sort(function(a,b) {
+                           a = a.toLowerCase();
+                           b = b.toLowerCase();
+                           if( a == b) return 0;
+                           return a < b ? -1 : 1;
+                           });
 
         buffer.admins = buffer.admins.join(', ');
         buffer.leaders = buffer.leaders.join(', ');
@@ -182,7 +212,7 @@ user.updateIdentity();
         buffer.drivers = buffer.drivers.join(', ');
         buffer.voices = buffer.voices.join(', ');
 
-        this.popupReply('Administrators:\n--------------------\n' + buffer.admins + '\n\nLeaders:\n-------------------- \n' + buffer.leaders + '\n\nModerators:\n-------------------- \n' + buffer.mods + '\n\nDrivers:\n--------------------\n' + buffer.drivers + '\n\nVoices:\n-------------------- \n' + buffer.voices + '\n\n\t\t\t\tTotal Staff Members: ' + numStaff);
+        this.popupReply('__**SparkServer Staff**__\n\nAdministrators (~):\n' + buffer.admins + '\n\nLeaders (&):\n' + buffer.leaders + '\n\nModerators (@):\n' + buffer.mods + '\n\nDrivers (%):\n' + buffer.drivers + '\n\nVoices (+):\n' + buffer.voices + '\n\nTotal Staff Members: ' + numStaff);
     },
 
     regdate: function (target, room, user, connection) {
