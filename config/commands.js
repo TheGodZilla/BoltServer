@@ -281,6 +281,7 @@ var commands = exports.commands = {
 	 * Shortcuts
 	 *********************************************************/
 
+	inv: 'invite',
 	invite: function (target, room, user) {
 		target = this.splitTarget(target);
 		if (!this.targetUser) {
@@ -727,6 +728,7 @@ var commands = exports.commands = {
 		this.sendReplyBox(buffer);
 	},
 
+	weaknesses: 'weakness',
 	weak: 'weakness',
 	resist: 'weakness',
 	weakness: function (target, room, user) {
@@ -966,6 +968,15 @@ var commands = exports.commands = {
 			"Example replays:<br />" +
 			"- <a href=\"https://replay.pokemonshowdown.com/gennextou-120689854\">Zergo vs Mr Weegle Snarf</a><br />" +
 			"- <a href=\"https://replay.pokemonshowdown.com/gennextou-130756055\">NickMP vs Khalogie</a>"
+		);
+	},
+
+	lctheorymon: function (target, room, user) {
+		if (!this.canBroadcast()) return;
+		this.sendReplyBox(
+			"LC Theorymon Project (Led by Mambo and QuoteCS, formerly led by Rhythms):<br />" +
+			"- <a href=\"http://www.smogon.com/forums/threads/the-lc-theorymon-project.3531397/\">Theorymon Thread</a><br />" +
+			"- <a href=\"https://github.com/TheFenderStory/Sparkserver-3.0/blob/master/mods/lctheorymon/scripts.js\">Theorymon Code</a>"
 		);
 	},
 
