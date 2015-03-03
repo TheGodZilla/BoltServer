@@ -1,4 +1,5 @@
 /config/*
+!/config/avatars/*
 /logs/*
 /node_modules
 npm-debug.log
