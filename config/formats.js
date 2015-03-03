@@ -350,17 +350,13 @@ exports.Formats = [
 	// Other Metagames
 	///////////////////////////////////////////////////////////////////
 
-	{
-		name: "LC Theorymon Project",
-		section: "Theorymon",
-		column: 2,
-
-		mod: 'lctheorymon',
-		maxLevel: 5,
-		defaultLevel: 5,
-		ruleset: ['LC'],
-		banlist: ['LC Uber', 'Gligar', 'Misdreavus', 'Scyther', 'Sneasel', 'Tangela', 'Dragon Rage', 'Sonic Boom', 'Swagger']
-	},
+    {
+        name: "LC Theorymon",
+        section: "ORAS Singles",
+                   
+        mod: 'lctheorymon',
+        ruleset: ['LC']
+    },
 	{
 		name: "FU",
 		section: "OM of the Month",
