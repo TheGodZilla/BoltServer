@@ -18,7 +18,7 @@ init: function () {
     this.modData('Pokedex', 'froakie').basestats = {hp:41,atk:56,def:40,spa:62,spd:44,spe:75};
    
     // Tentacool + Regenerator
-    this.modData('Pokedex', 'tentacool').abilities['2'] = 'Regenerator';
+    this.modData('Pokedex', 'tentacool').abilities['1'] = 'Regenerator';
    
     // Mincinno + Bullet Seed and Rock Blast
     this.modData('Learnsets', 'minccino').learnset.bulletseed = ['6L1'];
