@@ -169,11 +169,11 @@ body {
 /* Popup */
 .ps-popup {
     border: 2px solid #000000;
-    background: #ec9900;
+    background: #4786AE;
 }
 
 .ps-popup a {
-    color: rgb(145, 148, 168);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
