@@ -21,8 +21,8 @@ init: function () {
     this.modData('Pokedex', 'tentacool').abilities['2'] = 'Regenerator';
    
     // Mincinno + Bullet Seed and Rock Blast
-    this.modData('Learnsets', 'mincinno').learnset.bulletseed = ['6L1'];
-    this.modData('Learnsets', 'mincinno').learnset.rockblast = ['6L1'];
+    this.modData('Learnsets', 'minccino').learnset.bulletseed = ['6L1'];
+    this.modData('Learnsets', 'minccino').learnset.rockblast = ['6L1'];
    
 }
 };
