@@ -351,6 +351,17 @@ exports.Formats = [
 	///////////////////////////////////////////////////////////////////
 
 	{
+		name: "LC Theorymon Project",
+		section: "Theorymon",
+		column: 2,
+
+		mod: 'lctheorymon',
+		maxLevel: 5,
+		defaultLevel: 5,
+		ruleset: ['LC'],
+		banlist: ['LC Uber', 'Gligar', 'Misdreavus', 'Scyther', 'Sneasel', 'Tangela', 'Dragon Rage', 'Sonic Boom', 'Swagger']
+	},
+	{
 		name: "FU",
 		section: "OM of the Month",
 		column: 2,
