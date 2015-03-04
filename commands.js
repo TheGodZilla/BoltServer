@@ -132,6 +132,7 @@ var commands = exports.commands = {
 			case 'announce':
 				break;
 			case 'invite':
+			case: 'inv',
 				var targetRoomid = toId(target.substr(8));
 				if (targetRoomid === 'global') return false;
 
