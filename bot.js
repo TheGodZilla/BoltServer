@@ -10,7 +10,7 @@
  */
 
 var config = {
-    name: 'Sparkbot',
+    name: 'BoltBot',
     userid: function () {
         return toId(this.name);
     },
